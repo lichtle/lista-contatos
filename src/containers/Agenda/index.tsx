@@ -1,15 +1,13 @@
+import Contato from "../../components/Contato";
+import { AgendaContainer } from "./styles";
+
 const Agenda = () => (
-  <main>
+  <AgendaContainer>
     <h1>Contatos</h1>
-    <div>
-      <span>Nome completo: xxx</span>
-      <span>E-mail: xxx</span>
-      <span>Telefone: xxx</span>
-    </div>
-    <div>
-      <span>Nome completo: xxx</span>
-      <span>E-mail: xxx</span>
-      <span>Telefone: xxx</span>
-    </div>
-  </main>
+    <Contato />
+    <Contato />
+    <button>Adicionar um contato</button>
+  </AgendaContainer>
 );
+
+export default Agenda;

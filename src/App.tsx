@@ -1,9 +1,13 @@
-import Agenda from "./containers/Main";
+import EstiloGlobal, { Container } from "./styles";
+import Agenda from "./containers/Agenda";
 
 function App() {
   return (
     <>
-      <Agenda />
+      <EstiloGlobal />
+      <Container>
+        <Agenda />
+      </Container>
     </>
   );
 }
