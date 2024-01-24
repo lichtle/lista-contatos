@@ -1,5 +1,11 @@
 import styled, { createGlobalStyle } from "styled-components";
 
+import cores from "./variables";
+
+type PropsDoBotao = {
+  editar?: boolean;
+};
+
 const EstiloGlobal = createGlobalStyle`
   * {
     margin: 0;
@@ -17,14 +23,18 @@ export const Container = styled.div`
   display: flex;
   aling-items: center;
   justify-content: center;
-  margin-top: 72px;
+  margin-top: 32px;
 `;
 
-export const Botao = styled.button`
-  background-color: lightgreen;
+export const Botao = styled.button<PropsDoBotao>`
+  cursor: pointer;
+  background-color: ${(props) =>
+    props.editar ? cores.editButton : cores.deleteButton};
+  margin: 0 4px;
+  padding: 6px;
+  border-radius: 6px;
+  font-size: 12px;
   font-weight: bold;
-  padding: 8px;
-  margin: 0 8px;
 `;
 
 export default EstiloGlobal;
