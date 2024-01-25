@@ -1,7 +1,8 @@
 const cores = {
-  deleteButton: "#f44336",
-  editButton: "#ffa726",
-  addButton: "#81c784",
+  botaoExcluir: "#f44336",
+  botaoEditar: "#ffa726",
+  botaoAdicionar: "#81c784",
+  botaoRetornar: "#29b6f6",
 };
 
 export default cores;
