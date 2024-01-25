@@ -7,13 +7,7 @@ type ContactsState = {
 };
 
 const initialState: ContactsState = {
-  contatos: [
-    {
-      nome: "Leticia Fernandes Negreiros",
-      email: "example@mail.com",
-      telefone: 12369874560,
-    },
-  ],
+  contatos: [],
 };
 
 const contatoSlice = createSlice({
