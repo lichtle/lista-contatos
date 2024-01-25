@@ -1,46 +1,53 @@
 import styled from "styled-components";
 
 import cores from "../../styles/variables";
+import { Botao } from "../../styles";
 
-export const Dados = styled.div`
+export const Contatos = styled.div`
   background-color: white;
-  padding: 16px;
   display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px;
   border-radius: 8px;
   margin-top: 16px;
+`;
 
-  div span {
-    display: block;
-    margin-bottom: 12px;
+export const Contato = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 
-    span {
-      font-weight: bold;
-    }
+  span {
+    font-weight: bold;
+    width: 70px;
   }
 `;
 
-export const BotaoEditar = styled.button`
-  cursor: pointer;
+export const Campo = styled.input`
+  width: 100%;
+  padding: 6px;
+  border: none;
+`;
+
+export const Acoes = styled.div`
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+`;
+
+export const BotaoEditar = styled(Botao)`
   background-color: ${cores.botaoEditar};
-  margin: 0 4px;
-  padding: 6px;
-  font-size: 12px;
-  font-weight: bold;
-  border-radius: 6px;
-  border: 2px solid #000;
-  color: #000;
 `;
 
-export const BotaoExcluir = styled.button`
-  cursor: pointer;
+export const BotaoExcluirCancelar = styled(Botao)`
   background-color: ${cores.botaoExcluir};
-  margin: 0 4px;
-  padding: 6px;
-  font-size: 12px;
-  font-weight: bold;
-  border-radius: 6px;
-  border: 2px solid #000;
 `;
 
+export const BotaoSalvar = styled(Botao)`
+  background-color: ${cores.botaoAdicionar};
+`;

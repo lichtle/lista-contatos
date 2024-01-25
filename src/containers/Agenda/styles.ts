@@ -13,10 +13,10 @@ export const AgendaContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 30px;
-  padding: 40px;
+  gap: 16px;
+  padding: 32px;
   border-radius: 16px;
-  width: 550px;
+  width: 400px;
 `;
 
 export const BotaoAdicionarVoltar = styled(Link)<PropsDoBotao>`
@@ -28,7 +28,6 @@ export const BotaoAdicionarVoltar = styled(Link)<PropsDoBotao>`
   font-weight: bold;
   padding: 12px;
   border-radius: 6px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   text-align: center;
   color: #000;
 `;

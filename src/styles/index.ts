@@ -26,4 +26,16 @@ export const Container = styled.div`
   margin: 32px 0;
 `;
 
+export const Botao = styled.button`
+  width: 100px;
+  cursor: pointer;
+  margin: 0 4px;
+  padding: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 6px;
+  border: none;
+  color: #000;
+`;
+
 export default EstiloGlobal;
